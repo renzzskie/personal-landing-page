@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth" data-theme="light">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Landing Page</title>
+  <meta name="description" content="Modern minimalist personal landing page template." />
+  <meta name="color-scheme" content="dark light" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: ['class', '[data-theme="dark"]'],
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+          },
+          boxShadow: {
+            'soft': '0 8px 24px rgba(0,0,0,.06)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .focus-ring:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 2px hsl(0 0% 0%/.1), 0 0 0 6px hsl(0 0% 0%/.08);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 font-sans">
+  <!-- Header -->
+  <header
+    class="sticky top-0 z-40 backdrop-blur bg-white/90 dark:bg-zinc-950/90 border-b border-zinc-200/70 dark:border-zinc-800">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="h-16 flex items-center justify-between">
+        <a href="#" class="inline-flex items-center gap-2">
+          <span
+            class="inline-flex h-8 w-8 items-center justify-center rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-soft">
+            <img src="logo.png" alt="Logo Rendy" class="h-full w-full object-cover">
+          </span>
+          <span class="text-sm font-medium">Rendyzzz</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-1">
+          <a href="#about" class="px-3 py-2 text-sm rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-900">About</a>
+          <a href="#work" class="px-3 py-2 text-sm rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-900">Work</a>
+          <a href="#projects" class="px-3 py-2 text-sm rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-900">Projects</a>
+          <a href="#contact" class="px-3 py-2 text-sm rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-900">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="mx-auto max-w-6xl px-4 pt-16 lg:pt-24 pb-12">
+    <div class="grid items-center gap-8 lg:grid-cols-2">
+      <div>
+        <h1 class="mt-5 text-4xl/tight font-semibold sm:text-5xl">
+          Hi, I’m <span class="underline decoration-zinc-300 dark:decoration-zinc-700">Rendy Wahyu Islami</span> — a technology enthusiast and digital creator.
+        </h1>
+        <p class="mt-4 text-zinc-600 dark:text-zinc-400 max-w-prose">
+            I specialize in web development, UI/UX design, and creative digital projects. My focus is on building impactful products that combine functionality with aesthetics
+        </p>
+        <div class="mt-6 flex gap-3">
+          <a href="#projects"
+            class="inline-flex items-center gap-2 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-950 text-white dark:bg-white dark:text-zinc-950 px-4 py-2 text-sm">View
+            projects</a>
+          <a href="#contact"
+            class="inline-flex items-center gap-2 rounded-lg border border-zinc-200 dark:border-zinc-800 px-4 py-2 text-sm">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div
+          class="relative mx-auto aspect-square max-w-xs rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden shadow-soft">
+          <img src="gweh.jpg" alt="Foto Rendy Wahyu Islami" class="h-full w-full object-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-xl font-semibold tracking-tight mb-4">About Me</h2>
+    <p class="text-zinc-600 dark:text-zinc-400">
+        I am an Informatics Engineering student at the University of Mataram with a strong interest in technology, web development, and digital art. I am also the member of <strong>Rollenscapt</strong>, a photography and videography studio that focuses on delivering creative visual content. I believe technology and creativity should go hand in hand to provide real-world solutions.
+    </p>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-xl font-semibold tracking-tight mb-4">What I do</h2>
+    <div class="grid gap-4 sm:grid-cols-2">
+  <div class="rounded-2xl border p-5">
+    <h3 class="font-medium">UI/UX Design</h3>
+    <p class="text-sm text-zinc-600 dark:text-zinc-400">Designing intuitive and user-friendly digital interfaces.</p>
+  </div>
+  <div class="rounded-2xl border p-5">
+    <h3 class="font-medium">Frontend Development</h3>
+    <p class="text-sm text-zinc-600 dark:text-zinc-400">Building modern, responsive, and high-performance websites.</p>
+  </div>
+  <div class="rounded-2xl border p-5">
+    <h3 class="font-medium">Photography & Videography</h3>
+    <p class="text-sm text-zinc-600 dark:text-zinc-400">Capturing creative visuals through <strong>Rollenscapt</strong>.</p>
+  </div>
+  <div class="rounded-2xl border p-5">
+    <h3 class="font-medium">Creative Projects</h3>
+    <p class="text-sm text-zinc-600 dark:text-zinc-400">Exploring side projects that combine design and technology.</p>
+  </div>
+</div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-xl font-semibold tracking-tight mb-4">Projects</h2>
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+  <div class="rounded-2xl border p-4">
+    <h3 class="font-medium">Rollenscapt</h3>
+    <p class="text-sm text-zinc-600 dark:text-zinc-400">A creative photography and videography studio.</p>
+  </div>
+  <div class="rounded-2xl border p-4">
+    <h3 class="font-medium">Portfolio Website</h3>
+    <p class="text-sm text-zinc-600 dark:text-zinc-400">My personal landing page showcasing design and development skills.</p>
+  </div>
+  <div class="rounded-2xl border p-4">
+    <h3 class="font-medium">UI/UX Case Study</h3>
+    <p class="text-sm text-zinc-600 dark:text-zinc-400">A design project focused on improving user experience for digital platforms.</p>
+  </div>
+</div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-xl font-semibold tracking-tight mb-4">Contact</h2>
+    <form class="rounded-2xl border p-5">
+      <input type="text" placeholder="Your name" class="w-full mb-3 rounded-lg border px-3 py-2 text-sm" />
+      <input type="email" placeholder="Your email" class="w-full mb-3 rounded-lg border px-3 py-2 text-sm" />
+      <textarea placeholder="Your message" rows="4" class="w-full mb-3 rounded-lg border px-3 py-2 text-sm"></textarea>
+      <button type="button" class="rounded-lg border px-4 py-2 text-sm bg-zinc-950 text-white">Send me a message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-8 border-t border-zinc-200 dark:border-zinc-800">
+    <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-zinc-600 dark:text-zinc-400">
+      © <span id="year"></span> Rendyzzz. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
